@@ -49,3 +49,30 @@ Predict whether a loan applicant is likely to default on a loan.
 - **Model Performance**: Logistic Regression achieved ~80% accuracy (varies by split).
 - **Confusion Matrix**: Better prediction for approvals than non-approvals.
 - **Key Finding**: `Credit_History` and `Education` strongly influence loan approval.
+
+
+## Task 3: Customer Churn Prediction (Bank Customers)
+
+### Objective
+Identify customers likely to leave the bank using the Bank Customer Churn Dataset.
+
+### Approach
+- **Data Loading**: Imported the Bank Customer Churn Dataset (10,000 samples, 12 columns) via Kaggle.
+- **Inspection**: Examined dataset structure (`.shape`, `.columns`, `.head`), dropped `customer_id`, and encoded `country`, `gender` using One-Hot Encoding.
+- **Visualizations**:
+  - Histogram of `age` by `churn`.
+  - Histogram of `balance` by `churn`.
+  - Count plot of `country` vs. `churn`.
+  - Scatter plot of `age` vs. `balance` by `churn`.
+- **Model Training**: Trained a Random Forest Classifier for binary classification.
+- **Evaluation**: Assessed model with accuracy and confusion matrix.
+- **Feature Importance**: Analyzed key predictors of churn.
+- **Tools**: Used pandas, seaborn, matplotlib, scikit-learn, and kagglehub with `Set2` palette and `whitegrid` style.
+
+### Results and Insights
+- **Data Quality**: No missing values; categorical features encoded.
+- **EDA**: Older customers and higher balances more likely to churn; `country` impacts churn.
+- **Model Performance**: Random Forest achieved ~86% accuracy (varies by split).
+- **Feature Importance**: `age`, `balance`, and `products_number` are top predictors.
+- **Key Finding**: Customer age and account balance strongly influence churn likelihood.
+
