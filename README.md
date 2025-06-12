@@ -1,6 +1,6 @@
 # DevelopersHub Data Science and Analytics Internship Tasks
 
-This README file contains the four tasks I did at the internship.
+This README file contains the three tasks I did at the internship.
 
 ## Task 1: Exploring and Visualizing the Iris Dataset
 
